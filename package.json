@@ -1,0 +1,15 @@
+{
+  "name": "kistanto-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website of Kistanto - Informatics Graduate | Python Developer | Computer Vision Enthusiast",
+  "private": true,
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./css/style.css --minify",
+    "dev": "tailwindcss -i ./src/input.css -o ./css/style.css --watch",
+    "start": "npx serve . -l 3000",
+    "cv": "python3 scripts/build_cv.py"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
